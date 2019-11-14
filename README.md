@@ -1,3 +1,16 @@
+## Fork working with Tensorflow 1.0.0
+Due to the lastest upgrades to Tensorflow (2.0), the original evaluate.py script doesn't run properly with just doing "pip instal tensorflow". This fork fixes the issue and includes a **requirements.txt** file, which makes the installation of dependencies easier.
+This fork also includes the rain_princess.ckpt by default, so you just need to copy the image that you want to transform to the root folder and run:
+```
+python evaluate.py --checkpoint ./rain-princess.ckpt --in-path <path_to_input_file> --out-path ./output_image.jpg
+```
+This fork runs with **Python 3.5.6**
+
+You can install the dependencies with
+
+```pip install -r requirements.txt```
+
+
 ## Fast Style Transfer in [TensorFlow](https://github.com/tensorflow/tensorflow)
 
 Add styles from famous paintings to any photo in a fraction of a second! [You can even style videos!](#video-stylization)

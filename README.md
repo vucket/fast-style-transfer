@@ -1,5 +1,5 @@
 ## Fork working with Tensorflow 1.0.0
-Due to the lastest upgrades to Tensorflow (2.0), the original evaluate.py script doesn't run properly with just doing "pip instal tensorflow". This fork fixes the issue and includes a **requirements.txt** file, which makes the installation of dependencies easier.
+Due to the lastest upgrades to Tensorflow (2.0), the original evaluate.py script doesn't run properly with just doing "pip install tensorflow". This fork fixes the issue and includes a **requirements.txt** file, which makes the installation of dependencies easier.
 This fork also includes the rain_princess.ckpt by default, so you just need to copy the image that you want to transform to the root folder and run:
 ```
 python evaluate.py --checkpoint ./rain-princess.ckpt --in-path <path_to_input_file> --out-path ./output_image.jpg
